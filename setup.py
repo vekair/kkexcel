@@ -7,12 +7,12 @@ from setuptools import setup, find_packages
 
 setup(
   name = "scorpiotool",
-  version = "0.1.0",
+  version = "0.1.1",
   description = "xlsx tool",
   long_description = "xlsx tool",
   license = "MIT Licence",
 
-  url = "https://github.com/wgq0335/scorpio.git",
+  url = "https://github.com/wgq0335/PypiProject.git",
   author = "justinwei",
   author_email = "wgq0335@163.com",
 
