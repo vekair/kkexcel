@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 
 setup(
   name = "scorpiotool",
-  version = "0.1.1",
+  version = "0.1.2",
   description = "xlsx tool",
   long_description = "xlsx tool",
   license = "MIT Licence",
