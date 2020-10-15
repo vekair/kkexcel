@@ -33,4 +33,3 @@ def generate_excel(expenses, NAME):
             worksheet.write_string(row, col + i, str(item[list(item.keys())[col + i]]))
         row += 1
     workbook.close()
-
