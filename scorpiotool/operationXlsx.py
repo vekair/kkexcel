@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
-# -*- coding: utf-8 -*-
-import json
-
 import xlsxwriter
 
 
-# 生成excel文件
-def generate_excel(expenses, NAME, itemKey):
+def generate_excel(expenses, NAME):
+    """
+    自动顺序生成excel文件
+    :param expenses: 列表、数组，里面是字典形式key,value 例如：[{"name":'XXX'}]
+    :param NAME: new file name
+    :return: XXX.xlsx
+    """
     workbook = xlsxwriter.Workbook('./{}.xlsx'.format(NAME))
     worksheet = workbook.add_worksheet()
     keysList = [k for k in expenses[0].keys()]
@@ -25,8 +27,10 @@ def generate_excel(expenses, NAME, itemKey):
     col = 0
     for index, item in enumerate(expenses):
         # 使用write_string方法，指定数据格式写入数据
-        worksheet.write_string(row, col, str(item['product_id']))
-        worksheet.write_string(row, col + 1, item['promotion_id'])
-        worksheet.write_string(row, col + 2, str(item[itemKey]))
+        for i in range(len(expenses)):
+            if i >= len(list(item.keys())):
+                break
+            worksheet.write_string(row, col + i, str(item[list(item.keys())[col + i]]))
         row += 1
     workbook.close()
+
