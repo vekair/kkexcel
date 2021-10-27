@@ -17,8 +17,7 @@ def generate_excel(expenses, NAME):
     bold_format = workbook.add_format({'bold': True})
     # money_format = workbook.add_format({'num_format': '$#,##0'})
     # date_format = workbook.add_format({'num_format': 'mmmm d yyyy'})
-    columnList = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
-                  'Y', 'Z']
+    columnList = [chr(i) for i in range(ord("A"),ord("Z")+1)]
     # 将二行二列设置宽度为15(从0开始)
     worksheet.set_column(1, 1, 15)
     for index, value in enumerate(keysList):
