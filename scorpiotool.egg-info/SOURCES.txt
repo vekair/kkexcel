@@ -1,0 +1,9 @@
+README.md
+setup.py
+scorpiotool/__init__.py
+scorpiotool/operationXlsx.py
+scorpiotool.egg-info/PKG-INFO
+scorpiotool.egg-info/SOURCES.txt
+scorpiotool.egg-info/dependency_links.txt
+scorpiotool.egg-info/requires.txt
+scorpiotool.egg-info/top_level.txt
