@@ -5,17 +5,19 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="generate_excel",
-    version="0.1.5",
-    description="xlsx tool",
-    long_description="xlsx tool",
+    name="excel_utils",
+    version="0.1.6",
+    description=(
+        "json生成excel工具"
+    ),
+    long_description="json生成excel工具",
 
-    url="https://github.com/vekair/PypiProject.git",
+    url="https://github.com/vekair/excel_utils.git",
     author="vekair",
     author_email="vekair@126.com",
 
     packages=find_packages(),
     include_package_data=True,
     platforms="any",
-    install_requires=["xlsxwriter", "hashlib", "redis", "gzip", "random"]
+    install_requires=["xlsxwriter"]
 )
