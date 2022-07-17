@@ -1,6 +1,6 @@
 pip相关的包
 
-scorpiotool: excel的生成工具
+kkexcel: excel的生成工具
 
 #上传方式
 pip install wheel # 安装wheel模块
