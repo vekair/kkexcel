@@ -5,7 +5,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="scorpiotool",
+    name="generate_excel",
     version="0.1.5",
     description="xlsx tool",
     long_description="xlsx tool",
