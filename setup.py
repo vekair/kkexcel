@@ -5,14 +5,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="excel_utils",
+    name="kkexcel",
     version="0.1.6",
-    description=(
-        "json生成excel工具"
-    ),
+    description="json生成excel工具",
     long_description="json生成excel工具",
 
-    url="https://github.com/vekair/excel_utils.git",
+    url="https://github.com/vekair/kkexcel.git",
     author="vekair",
     author_email="vekair@126.com",
 

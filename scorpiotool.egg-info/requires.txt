@@ -1,5 +1,0 @@
-xlsxwriter
-hashlib
-redis
-gzip
-random
