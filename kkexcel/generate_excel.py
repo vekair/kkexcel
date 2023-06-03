@@ -13,7 +13,7 @@ def generate_excel(expenses, NAME):
     :param NAME: new file name
     :return: XXX.xlsx
     """
-    workbook = xlsxwriter.Workbook('./{}.xlsx'.format(NAME))
+    workbook = xlsxwriter.Workbook('{}.xlsx'.format(NAME))
     worksheet = workbook.add_worksheet()
     keysList = [k for k in expenses[0].keys()]
     # 设定格式，等号左边格式名称自定义，字典中格式为指定选项
