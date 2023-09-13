@@ -28,7 +28,7 @@ def generate_excel(expenses, NAME):
     col = 0
     for index, item in enumerate(expenses):
         # 使用write_string方法，指定数据格式写入数据
-        for i in range(len(expenses)):
+        for i in range(len(item)):
             if i >= len(list(item.keys())):
                 break
             worksheet.write_string(row, col + i, str(item[list(item.keys())[col + i]]))
