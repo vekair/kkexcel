@@ -1,10 +1,10 @@
-Metadata-Version: 1.0
+Metadata-Version: 2.1
 Name: kkexcel
-Version: 0.1.8
+Version: 0.1.9
 Summary: json生成excel工具
 Home-page: https://github.com/vekair/kkexcel.git
 Author: vekair
 Author-email: vekair@126.com
-License: UNKNOWN
-Description: json生成excel工具
 Platform: any
+
+json生成excel工具
